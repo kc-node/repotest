@@ -28,7 +28,9 @@ jobs:
             # '-am' is for buidling required dependencies
             # 'clean' is to ensure that removes complied files
             # 'verify' is to validate that it compiles code and runs all tests 
-          run: mvn -pl apps/backend -am clean verify 
+            # run: mvn -pl apps/backend -am clean verify 
+          run: mvn -f apps/backend/pom.xml clean verify 
+
 
     frontend-test:
         runs-on: ubuntu-latest
