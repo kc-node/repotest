@@ -22,6 +22,7 @@ jobs:
             distribution: 'temurin'
             # maven (pom.xml) will be used to download dependencies and will be cache so speed up builds 
             cache: 'maven'
+            cache-dependency-path: apps/backend/pom.xml
         - name: Build with Maven
             # maven to used only for backend module
             # '-am' is for buidling required dependencies
@@ -39,6 +40,7 @@ jobs:
                 node-version: '24' # node 20 will be deprecated
                 # uses yarn not npm 
                 cache: 'yarn'
+                cache-dependency-path: apps/frontend/yarn.lock
             - name: Install & Test (Yarn)
                 # install all dependencies - Angular and builds node_modules
                 # frozen-lockfile - prevent changes to lockfile 
