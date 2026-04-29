@@ -1,11 +1,11 @@
 # MISP Platform 
 
-[![Build Status](https://github.com/kc-node/my-project/actions/workflows/ci.yml/badge.svg)](https://github.com/kc-node/my-project/actions)
-[![Coverage](https://img.shields.io/codecov/c/github/kc-node/my-project?style=flat-square)](https://codecov.io/gh/kc-node/my-project)
+[![Build Status](https://github.com/kc-node/repotest/actions/workflows/ci.yml/badge.svg)](https://github.com/kc-node/my-project/actions)
+[![Coverage](https://img.shields.io/codecov/c/github/kc-node/repotest?style=flat-square)](https://codecov.io/gh/kc-node/repotest)
 ![Java](https://img.shields.io/badge/Java-17-orange?style=flat-square&logo=openjdk)
 ![Node](https://img.shields.io/badge/Node-18-green?style=flat-square&logo=node.js)
-![License](https://img.shields.io/github/license/kc-node/my-project?style=flat-square)
-![Issues](https://img.shields.io/github/issues/kc-node/my-project?style=flat-square)
+![License](https://img.shields.io/github/license/kc-node/repotest?style=flat-square)
+![Issues](https://img.shields.io/github/issues/kc-node/repotest?style=flat-square)
 
 A comprehensive Municipal Integrated Service Portal (MISP) designed for resident service reporting, featuring a Spring Boot backend and an Angular frontend managed in a high-performance monorepo.
 
