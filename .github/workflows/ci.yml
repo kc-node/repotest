@@ -22,12 +22,15 @@ jobs:
             distribution: 'temurin'
             # maven (pom.xml) will be used to download dependencies and will be cache so speed up builds 
             cache: 'maven'
+            cache-dependency-path: apps/backend/pom.xml
         - name: Build with Maven
             # maven to used only for backend module
             # '-am' is for buidling required dependencies
             # 'clean' is to ensure that removes complied files
             # 'verify' is to validate that it compiles code and runs all tests 
-          run: mvn -pl apps/backend -am clean verify 
+            # run: mvn -pl apps/backend -am clean verify 
+          run: mvn -f apps/backend/pom.xml clean verify 
+
 
     frontend-test:
         runs-on: ubuntu-latest
@@ -36,9 +39,10 @@ jobs:
             - name: Set up Node.js
               uses: actions/setup-node@v4
               with:
-                node-version: '18'
+                node-version: '24' # node 20 will be deprecated
                 # uses yarn not npm 
                 cache: 'yarn'
+                cache-dependency-path: apps/frontend/yarn.lock
             - name: Install & Test (Yarn)
                 # install all dependencies - Angular and builds node_modules
                 # frozen-lockfile - prevent changes to lockfile 
