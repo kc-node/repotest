@@ -1,0 +1,10 @@
+{
+    "name": "timesheetai-frontend", 
+    "version": "0.0.1",
+    "private":"true",
+    "scripts": {
+        "test": "echo 'testing the CI pipeline' && exit 0"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}
