@@ -2,8 +2,9 @@
 
 [![Build Status](https://github.com/kc-node/repotest/actions/workflows/ci.yml/badge.svg)](https://github.com/kc-node/my-project/actions)
 [![Coverage](https://img.shields.io/codecov/c/github/kc-node/repotest?style=flat-square)](https://codecov.io/gh/kc-node/repotest)
-![Java](https://img.shields.io/badge/Java-17-orange?style=flat-square&logo=openjdk)
+![Java 17](https://img.shields.io/badge/JDK-17-red?logo=java)
 ![Node](https://img.shields.io/badge/Node-18-green?style=flat-square&logo=node.js)
+![Angular 17](https://img.shields.io/badge/Angular-17-dd0031?logo=angular)
 ![License](https://img.shields.io/github/license/kc-node/repotest?style=flat-square)
 ![Issues](https://img.shields.io/github/issues/kc-node/repotest?style=flat-square)
 
